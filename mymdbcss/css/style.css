@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif&display=swap');
+
+body{
+    font-size: 18px;
+    font-family: 'PT Sans', sans-serif;
+    color: #b0b0b0;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+font-family: 'PT Serif', serif;
+font-size: 24px;
+color: #000000;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+ul{
+    list-style: none;
+}
+
+/* Start Header Area */
+
+.main-menu ul li{
+  display: inline-block;
+  margin-left: 30px;
+}
+.main-menu ul li a{
+  text-decoration: none;
+  font-family: 'PT Sans', sans-serif;
+  font-weight:500;
+  position: relative;
+}
+.main-menu ul li a::before {
+    position: absolute;
+    content: "";
+    bottom: -18px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0px;
+    background: #1a54e7;
+    height: 3px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.main-menu ul li:hover > a::before{
+ visibility: visible;
+ opacity: 1;
+  width: 63px;
+}
+
+.header-area{
+    position: relative;
+}
+
+.left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #1a54e7;
+    height: 100%;
+    width: 31%;
+}
+
+/* Slider-area */
+.singal-slider{
+    background-size: cover;
+    min-height:815px;
+}
+
+.slider-content h3{
+   font-size: 48px;
+   color: #ffffff;
+}
+.slider-wrapper{
+    position: relative;
+}
+
+.slider-meta {
+    position: absolute;
+    bottom: -86%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.people a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    background: #1a54e7;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: .3s;
+}
+.people a:hover {
+    background: #d90445;
+}
+.slider-date p{
+  color: #b0b0b0;
+  font-size: 14px;
+}
+
+.content-img img {
+    margin-bottom: 25px;
+}
+
+.slider-active.owl-carousel .owl-item img {
+    display: inline-block;
+    width: 12%;
+} 
+
+
+/* Start Slider-area  */
+.slider-active .owl-nav button.owl-prev{
+    background:#3d3d3d;
+    color: inherit;
+    top:50%;
+    position:absolute;
+    z-index:999;
+    left:50px;
+    text-align:center;
+    height: 50px;
+    width: 50px;
+    font-size:25px;
+    color:#fff;
+    font-family: 'Glacial Indifference';
+    font-weight:bolder;
+    border-radius: 50px;
+    outline: 0;
+}
+
+.slider-active .owl-nav button.owl-next {
+    background: #3d3d3d;
+    color: inherit;
+    top: 50%;
+    position: absolute;
+    z-index: 999;
+    right: 50px;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Glacial Indifference';
+    font-weight: bolder;
+    border-radius: 50px;
+    outline: 0;
+}
+
+
+/* Start Latest Blog Areea */
+.latestblog-area{
+    background: #f6f6f6;
+}
+.slider-area{
+  background: #f6f6f6;
+}
+.latest-content h3 a {
+    font-family: 'PT Sans', sans-serif;
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    padding-top: 20px;
+    display: block;
+    line-height: 1.5em;
+}
+.latest-img img{
+    width: 100%;
+}
+
+.latestBlog-wrapper {
+    position: relative;
+}
+
+/* All tags   Shortcut */
+/* All tags   Shortcut */
+/* All tags   Shortcut */
+.tag-1 a {
+    padding: 7px 21px;
+    background: #d90445;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+}
+ .tag-2 a {
+    padding: 7px 21px;
+    background: #000000;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+}
+
+.tag-3 a {
+    padding: 7px 21px;
+    background: #58b600;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+    position: absolute;
+    bottom: 45%;
+    left: 4%;
+}
+.tag-4 a{
+     padding: 7px 21px;
+    background: #1a54e7;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+    position: absolute;
+    bottom: 45%;
+    left: 4%; 
+}
+.tag-5 a{
+     padding: 7px 21px;
+    background: #1a54e7;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+    position: absolute;
+    bottom: 45%;
+    left: 4%; 
+}
+
+.blog-title h3 a{
+    font-family: 'PT Sans', sans-serif;
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    padding-top: 20px;
+    display: block;
+    line-height: 1.5em;
+}
+/* All tags   Shortcut */
+/* All tags   Shortcut */
+/* All tags   Shortcut */
+
+.latestBlog-wrapper .tag-1 a {
+    bottom: 40%;
+    left: 0;
+}
+
+.latestBlog-wrapper .tag-2 a {
+    bottom: 40%;
+    left: 0;
+}
+
+
+/* Start Banner */
+.blog-banner img{
+  width: 100%;
+}
+.banner-wrapper{
+    position: relative;
+}
+
+.banner-content {
+    position: absolute;
+    left: 25%;
+    bottom: 24%;
+}
+
+.banner-content h3{
+  color: #ffffff;
+  font-size: 48px;
+}
+.banner-content p{
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.5em;
+  display: inline-block
+}
+
+.banner-wrapper .tag-1 a {
+    bottom: 15%;
+    left: 0;
+}
+.banner-wrapper .slider-date {
+    position: absolute;
+    right: 27px;
+    bottom: 13%;
+}
+
+
+/* Start all blog list */
+.all-blog .blog-wrapper .blog-img img{
+    width: 100%;
+}
+.all-blog .blog-wrapper .blog-title h3 a {
+    font-size: 18px;
+    font-weight: 600;
+}
+.all-blog .blog-wrapper .slider-date{
+   margin-top: 15px;
+}
+.all-blog .blog-wrapper .tag-2 a {
+    bottom:  45%;
+    left: 4%; 
+}
+.all-blog .blog-wrapper .tag-1 a {
+    bottom: 45%;
+    left: 4%; 
+}
+
+.blog-wrapper{
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+
+/* Start Subscribe Area */
+
+.subscribe-area{
+    background-size: cover;
+}
+.subcribe-wrapper h3{
+    color: #ffffff;
+    font-size: 48px;
+}
+.subcribe-wrapper p{
+    color: #8baeff;
+    font-size: 24px;
+}
+
+.form input[type="email"] {
+  width: 60%;
+  padding: 15px 30px;
+  border-radius: 50px;
+  outline: 0;
+  border: 0;
+  background: #2c6cff;
+  color: #fbf1f1d8;
+}
+
+:focus {
+  outline: none;
+  color: #ffff;
+}
+.form{
+    margin-top: 45px;
+    position: relative;
+}
+
+.form .btn {
+    padding: 13px 42px;
+    background: #ffffff;
+    color: #1a54e7;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    position: absolute;
+    right: 20%;
+    top: 0%;
+}
+
+.footer-area{
+    background: #ffffff;
+}
